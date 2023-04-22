@@ -1,0 +1,155 @@
+/* 京东的CSS初始化样式文件 */
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    /* 默认有灰色边框我们需要手动去掉 */
+    border: 0; 
+    outline: none;
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 16px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+    background-image: url(../upload/background.jpg);
+    background-size: cover;
+}
+
+footer {
+    color: #fff;
+}
+
+.hide,
+.none {
+    display: none
+}
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.w {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 3px solid #6495ed;
+}
+.logo {
+    padding-top: 18px;
+    height: 84px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.gotoindex{
+    display: inline-block;
+    height: 84px;
+}
+
+.area {
+    height: 522px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background:rgba(255,255,255,0.4);
+}
+
+.Title {
+    height: 55px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    font-weight:bold;
+    line-height: 55px;
+    padding: 0 10px;
+    font-size: 22px;
+    width: 200px;
+    /* display: inline-block; */
+    float: left;
+}
+
+.Text {
+    height: 55px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 55px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 1400px;
+    text-align: right;
+    color: #666;
+}
+
+.workplace {
+    width: 800px;
+    margin: 30px auto 20px;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+.links a {
+    margin: 0 3px;
+}
+.copyright {
+    line-height: 20px;
+}

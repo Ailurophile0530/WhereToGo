@@ -1,0 +1,188 @@
+.portrait {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: 185px;
+    left: 125px;
+}
+
+.IDname {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 195px;
+    left: 275px;
+    line-height: 40px;
+    font-size: 22px;
+}
+
+.perInf {
+    width: 150px;
+    height: 215px;
+    position: absolute;
+    top: 250px;
+    left: 275px;
+    font-size: 18px;
+}
+
+.sex,
+.grade,
+.height,
+.weight,
+.BMI {
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    margin-bottom: 5px;
+}
+.sex {
+    top: 0px;
+}
+.grade {
+    top: 45px;
+}
+.height {
+    top: 90px;
+}
+.weight {
+    top: 135px;
+}
+.BMI {
+    top: 180px;
+}
+
+.saying {
+    /* background-color: transparent; */
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: 220px;
+    left: 450px;
+    font-size: 20px;
+    padding: 10px;
+}
+.say_content {
+    background-color: transparent;
+    width: 230px;
+    height: 140px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 20px;
+    display: block;
+    resize: none;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.history,
+.collect,
+.setting {
+    width: 150px;
+    height: 70px;
+    border-radius: 25px;
+    background-color:#6495ed;
+    color:#ececec;
+    position: absolute;
+    top: 520px;
+    left: 135px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 22px;
+    box-shadow: 7px 7px 3px #666;
+}
+.collect {
+    top: 520px;
+    left: 325px;
+}
+.setting {
+    top: 520px;
+    left: 515px;
+}
+
+.medal {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.medal1 {
+    top: 175px;
+    right: 675px;
+    background-image: url(../upload/outside.png);
+    background-size: cover;
+}
+.medal2 {
+    top: 285px;
+    right: 675px;
+    background-image: url(../upload/inside.png);
+    background-size: cover;
+}
+.medal3 {
+    top: 395px;
+    right: 675px;
+    background-image: url(../upload/animal.png);
+    background-size: cover;
+}
+.medal4 {
+    top: 505px;
+    right: 675px;
+    background-image: url(../upload/food.png);
+    background-size: cover;
+}
+.medal5 {
+    top: 175px;
+    right: 555px;
+    background-image: url(../upload/museum.png);
+    background-size: cover;
+}
+.medal6 {
+    top: 285px;
+    right: 555px;
+    background-image: url(../upload/cinema.png);
+    background-size: cover;
+}
+.medal7 {
+    top: 395px;
+    right: 555px;
+    background-image: url(../upload/art.png);
+    background-size: cover;
+}
+.medal8 {
+    top: 505px;
+    right: 555px;
+    background-image: url(../upload/time.png);
+    background-size: cover;
+}
+.medal_half {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.echart1 {
+    width: 450px;
+    height: 190px;
+    position: absolute;
+    top: 165px;
+    right: 85px;
+}
+.echart2 {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 370px;
+    right: 100px;
+}
+
+.clear {
+    /* float:right; */
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 105px;
+}

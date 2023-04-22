@@ -1,0 +1,107 @@
+.workplace ul{
+    margin: 0 auto;
+}
+
+.workplace ul li {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.workplace ul li label {
+    display: inline-block;
+    width: 96px;
+    text-align: right;
+}
+.workplace ul li .inp {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+.workplace ul li .inp0 {
+    width: 121px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+
+.error {
+    color: #c81523;
+}
+.error_icon,
+.success_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+    margin-top: -2px;
+}
+.success {
+    color: green;
+}
+.success_icon {
+    background: url(../images/success.png) no-repeat;
+}
+.eye {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-top: -2px;
+}
+.safe {
+    padding-left: 170px;
+}
+.safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+.ruo {
+    background-color: rgba(64, 184, 63, 0.5);
+}
+.zhong {
+    background-color: rgb(247, 145, 0, 0.5);
+}
+.qiang {
+    background-color: rgba(222, 17, 17, 0.5);
+}
+.agree {
+    text-align: center;
+    padding-left: 5px;
+}
+.agree input {
+    vertical-align: middle;
+}
+.agree a {
+    color: #5495ed;
+    text-decoration:underline;
+}
+.btnNT {
+    width: 100px;
+    height: 34px;
+    background-color:#666;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    padding-top: 6px;
+    text-align: center;
+}
+
+.btnRG {
+    width: 200px;
+    height: 40px;
+    background-color:#5495ed;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 288px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.test {
+    width: 163px;
+}
+
+.limit {
+    width: 185px;
+}

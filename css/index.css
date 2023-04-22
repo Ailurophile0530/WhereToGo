@@ -1,0 +1,170 @@
+.person,
+.outside,
+.inside,
+.comphs,
+.gather {
+    width: 150px;
+    height: 70px;
+    border-radius: 25px;
+    background-color: #6495ed;
+    color: #ececec;
+    position: absolute;
+    line-height: 70px;
+    text-align: center;
+    font-size: 22px;
+    font-weight:bold;
+    box-shadow: 7px 7px 3px #666;
+}
+
+.person {
+    top: 520px;
+    left: 135px;
+}
+
+.outside {
+    top: 520px;
+    left: 315px;
+}
+
+.inside {
+    top: 520px;
+    left: 495px;
+}
+
+.comphs {
+    top: 520px;
+    left: 675px;
+}
+
+.gather {
+    top: 520px;
+    left: 855px;
+}
+
+.turns {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 185px;
+    left: 135px;
+    overflow: hidden;
+}
+
+.intrdc {
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: 780px;
+    text-indent:2em;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.arrow_l,
+.arrow_r {
+    display: none;
+    font-size: 30px;
+    font-family: 'icomoon';
+}
+
+.arrow_l {
+    position: absolute;
+    top: 135px;
+    left: 0px;
+}
+
+.arrow_r {
+    position: absolute;
+    top: 135px;
+    left: 570px;
+}
+
+.turns ul {
+    width: 400%;
+    position: absolute;
+    left: 0;
+}
+
+.turns ul li {
+    float: left;
+    width: 600px;
+    height: 300px;
+    background-size: 600px 300px;
+}
+
+.post1 {
+    background-image: url(../upload/post1.jpg);
+}
+
+.post2 {
+    background-image: url(../upload/post2.jpg);
+}
+
+.post3 {
+    background-image: url(../upload/post3.jpg);
+}
+
+.post4 {
+    background-image: url(../upload/post4.jpg);
+}
+
+.circle {
+    position: absolute;
+    top: 280px;
+    left: 250px;
+}
+
+.circle li {
+    margin: 0 5px;
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #fff;
+}
+
+.current {
+    background-color: #fff;
+}
+
+.news {
+    width: 330px;
+    height: 435px;
+    position: absolute;
+    top: 175px;
+    right: 135px;
+}
+
+.news1,
+.news2,
+.news3,
+.news4 {
+    background-color: #6495ed;
+    width: 330px;
+    height: 99px;
+    position: absolute;
+    background-size: 330px 99px;
+}
+
+.news1 {
+    top: 0px;
+    background-image: url(../upload/news1.png);
+}
+
+.news2 {
+    top: 112px;
+    background-image: url(../upload/news2.jpg);
+}
+
+.news3 {
+    top: 224px;
+    background-image: url(../upload/news3.jpg);
+}
+
+.news4 {
+    top: 336px;
+    background-image: url(../upload/news4.jpg);
+}

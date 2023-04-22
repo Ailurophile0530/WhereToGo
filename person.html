@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人界面</title>
+
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入我们初始化的css -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入我们自己的注册页面的css -->
+    <link rel="stylesheet" href="css/person.css">
+    <!-- 在引入我们自己的js文件 -->
+</head>
+
+<body>
+    <div class="w">
+        <header>
+            <div class="logo">
+                <a href="index.html"> <img src="upload/hook-click.png" alt=""></a> WhereToGo
+            </div>
+        </header>
+        <div class="area">
+            <div class="Title">个人界面</div>
+            <div class="Text">Where to go ~</div>
+            <div class="workplace">
+                <div><img src="./upload/girl.png" class="portrait"></div>
+                <div class="IDname"></div>
+                <div class="perInf">
+                    <div class="sex"></div>
+                    <div class="grade"></div>
+                    <div class="height"></div>
+                    <div class="weight"></div>
+                    <div class="BMI"></div>
+                </div>
+                <div class="saying">
+                    个性签名：<textarea class="say_content">    </textarea>
+                </div>
+                <div class="history">历史记录</div>
+                <div class="collect">活动收藏</div>
+                <div class="setting">设置</div>
+                <div class="medal medal1"><span class=""></span></div>
+                <!-- 户外 -->
+                <div class="medal medal2"><span class=""></span></div>
+                <!-- 室内 -->
+                <div class="medal medal3"><span class="medal_half"></span></div>
+                <!-- 动植物 -->
+                <div class="medal medal4"><span class="medal_half">吃饭</span></div>
+                <!-- 吃饭 -->
+                <div class="medal medal5"><span class="medal_half"></span></div>
+                <!-- 博物馆 -->
+                <div class="medal medal6"><span class="medal_half"></span></div>
+                <!-- 电影院 -->
+                <div class="medal medal7"><span class=""></span></div>
+                <!-- 艺术 -->
+                <div class="medal medal8"><span class=""></span></div>
+                <!-- 总时长 -->
+                <div class="echart1"></div>
+                <div class="echart2"></div>
+                <button class="clear">清除LocalData</button>
+            </div>
+        </div>
+        <footer>
+            <div class="mod_copyright">
+                <div class="links">
+                    关于我们 | 联系我们 | 联系客服 | 商家入驻 | 推荐中心 | 手机登录 | 友情链接 | 兴趣联盟 | WhereToGo社区 | 相关公益 | English Site | Contact U
+                </div>
+                <div class="copyright">
+                    地址：上海市宝山区上大路99号 邮编：200444 电话：021-66132222 传真：021-66136038 邮箱: shu.edu.cn <br>
+                    心品购欢迎您的使用！
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="./js/person.js"></script>
+    <script src="./js/echarts.min.js"></script>
+    <script>
+        var echart1 = echarts.init(document.querySelector('.echart1'));
+        var option1 = {
+            title: {
+                text: 'Stacked Line'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['FirstHalf', 'SecondHalf'],
+                top: 25
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['Jan(Jul)', 'Feb(Aug)', 'Mar(Sep)', 'Apr(Oct)', 'May(Nov)', 'Jun(Dec)']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name: 'FirstHalf',
+                    type: 'line',
+                    stack: 'Total',
+                    itemStyle: {
+                        normal: {
+                            color: '#dc143c',
+                            lineStyle: {
+                                color: '#dc143c'
+                            }
+                        }
+                    },
+                    data: [20, 12, 19, 23, 29, 30]
+                },
+                {
+                    name: 'SecondHalf',
+                    type: 'line',
+                    stack: 'Total',
+                    itemStyle: {
+                        normal: {
+                            color: '#2e8b57',
+                            lineStyle: {
+                                color: '#2e8b57'
+                            }
+                        }
+                    },
+                    data: [15, 23, 21, 14, 19, 30]
+                }
+            ]
+        };
+        echart1.setOption(option1);
+
+        var echart2 = echarts.init(document.querySelector('.echart2'));
+        var option2 = {
+            title: {
+                text: 'Stacked Line'
+            },
+            legend: {
+                top: 'bottom'
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    mark: { show: true },
+                    dataView: { show: true, readOnly: false },
+                    restore: { show: true },
+                    saveAsImage: { show: true }
+                }
+            },
+            series: [
+                {
+                    name: 'Nightingale Chart',
+                    type: 'pie',
+                    radius: [10, 100],
+                    center: ['50%', '50%'],
+                    roseType: 'area',
+                    itemStyle: {
+                        borderRadius: 8
+                    },
+                    label: {
+                        show: false
+                    },
+                    data: [
+                        { value: 14, name: '艺术' },
+                        { value: 13, name: '体育' },
+                        { value: 12, name: '手工' },
+                        { value: 13, name: '食物' },
+                        { value: 12, name: '打卡' },
+                        { value: 16, name: '自然' },
+                        { value: 12, name: '影视' },
+                        { value: 18, name: '桌游' },
+                        { value: 11, name: '人文' },
+                    ]
+                }
+            ]
+        };
+        echart2.setOption(option2);
+    </script>
+</body>
+
+</html>
